@@ -7,7 +7,7 @@
 # sleep_in(True, False) → False
 # sleep_in(False, True) → True
 
-# ===My solution===
+# === MY SOLUTION ===
 
 def sleep_in(weekday, vacation):
   if weekday == True and vacation == False:
