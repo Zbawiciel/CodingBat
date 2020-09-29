@@ -14,12 +14,15 @@
 
 # === MY SOLUTION ===
 
-def combo_string(a, b):
-  x = len(a)
-  y = len(b)
-  if x > y:
-    a = b + a + b
-    return a
-  elif y > x:
-    b = a + b + a
-    return b
+def caught_speeding(speed, is_birthday):
+  limit60 = 60
+  limit80 = 80
+  if is_birthday:
+    limit60 = limit60 + 5
+    limit80 = limit80 + 5
+  if speed <= limit60:
+    return 0
+  elif speed>limit60 and speed<=limit80:
+    return 1
+  else:
+    return 2
